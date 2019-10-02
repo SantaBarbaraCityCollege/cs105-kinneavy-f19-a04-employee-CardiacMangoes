@@ -1,7 +1,7 @@
 /**
  * CS 105 Theory and Practice I
  * CRN: [38066]
- * Assignment: Multiply
+ * Assignment: Employee
  * 
  * Statement of code ownership: I hereby state that I have written all of this
  * code and I have not copied this code from any other person or source.
@@ -20,7 +20,8 @@ public class Employee {
 
     /**
      * Constructor that creates a new Employee with an initial name and salary.
-     * 
+     * @param employeeName assigns name to Employee object
+     * @param currentSalary assigns salary to Employee object
      */
     public Employee(String employeeName, double currentSalary) {
 		name = employeeName;
@@ -40,7 +41,7 @@ public class Employee {
 
     /**
      * Raise the salary by the amount specified by the explicit argument.
-     * 
+     * @param byPercent percent at which the salary will be raised
      */
     public void raiseSalary(double byPercent) {
         salary += salary * byPercent * .01;
